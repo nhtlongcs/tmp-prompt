@@ -148,3 +148,33 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground) / 0.5);
 }
+/* ── Retrieval workspace: dense expert theme ───────────────────────── */
+.workspace {
+  --background: 222 18% 7%;
+  --foreground: 210 16% 92%;
+  --card: 222 16% 10%;
+  --card-foreground: 210 16% 92%;
+  --popover: 222 20% 9%;
+  --popover-foreground: 210 16% 92%;
+  --primary: 190 92% 52%;
+  --primary-foreground: 222 25% 6%;
+  --secondary: 222 14% 14%;
+  --secondary-foreground: 210 16% 92%;
+  --muted: 222 12% 15%;
+  --muted-foreground: 215 12% 58%;
+  --accent: 222 14% 17%;
+  --accent-foreground: 210 16% 92%;
+  --destructive: 358 72% 54%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 12% 19%;
+  --input: 220 12% 19%;
+  --ring: 190 92% 52%;
+  --radius: 0.25rem;
+  --panel: 222 16% 11%;
+  --ok: 152 62% 46%;
+  --warn: 38 92% 56%;
+  --bad: 358 72% 58%;
+  font-feature-settings: "tnum" 1, "cv02" 1;
+}
+.workspace ::-webkit-scrollbar { width: 10px; height: 10px; }
+.workspace ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 2px; }
