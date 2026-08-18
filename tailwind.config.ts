@@ -32,6 +32,10 @@ export default {
       },
       colors: {
         border: "hsl(var(--border))",
+        panel: "hsl(var(--panel))",
+        ok: "hsl(var(--ok))",
+        warn: "hsl(var(--warn))",
+        bad: "hsl(var(--bad))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
