@@ -96,7 +96,7 @@ export function ResultRow({
           </div>
         ))}
       </div>
-      <div className="ml-auto w-[168px] shrink-0 pl-2">
+      <div className="ml-auto w-[330px] shrink-0 pl-3">
         <div className={`text-[11px] leading-[14px] ${diffTone[c.diffKind]}`}>
           {c.diffKind === "top" ? "✓ " : c.diffKind === "bad" ? "✕ " : c.diffKind === "warn" ? "△ " : "· "}
           {c.diff}
@@ -106,6 +106,11 @@ export function ResultRow({
             <div key={e.slot} className="flex items-center gap-[4px]">
               <span className="font-mono text-[9px] text-muted-foreground">{e.slot}</span>
               <ModalityBadges ev={e} />
+              <span className="font-mono text-[9px] text-muted-foreground">
+                ev {e.scores.event.toFixed(2)} · frm {e.scores.frame.toFixed(2)}
+                {e.scores.asr !== undefined && ` · asr ${e.scores.asr.toFixed(2)}`}
+                {e.ocr?.length ? ` · ▣ ${e.ocr[0]}` : ""}
+              </span>
               {e.flag && (
                 <Tooltip delayDuration={100}>
                   <TooltipTrigger asChild>

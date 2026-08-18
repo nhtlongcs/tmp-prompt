@@ -193,7 +193,7 @@ export function KeyframeCell({ ev, w, h, dim, onOpen }: Props) {
 
 export function GapConnector({ seconds, ok }: { seconds: number; ok: boolean }) {
   return (
-    <div className="flex w-[58px] flex-col items-center justify-center pb-4">
+    <div className="flex w-[96px] flex-col items-center justify-center pb-4">
       <span className={`font-mono text-[10px] leading-none ${ok ? "text-muted-foreground" : "text-bad"}`}>
         {gapLabel(seconds)}
       </span>

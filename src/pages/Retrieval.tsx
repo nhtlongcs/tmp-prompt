@@ -122,11 +122,11 @@ export default function Retrieval() {
         <div className="flex items-center border-b border-border bg-panel px-3 py-[2px] font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
           <span className="w-[124px] shrink-0">rank / source</span>
           <span className="w-[124px] shrink-0">E1 enter building</span>
-          <span className="w-[58px] shrink-0 text-center">gap</span>
+          <span className="w-[96px] shrink-0 text-center">gap</span>
           <span className="w-[124px] shrink-0">E2 talk reporters ★</span>
-          <span className="w-[58px] shrink-0 text-center">gap</span>
+          <span className="w-[96px] shrink-0 text-center">gap</span>
           <span className="w-[124px] shrink-0">E3 enter car</span>
-          <span className="ml-auto w-[168px] shrink-0">difference vs #1</span>
+          <span className="ml-auto w-[330px] shrink-0 pl-3">difference vs #1 / per-event evidence</span>
         </div>
       )}
 
